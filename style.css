@@ -1,0 +1,59 @@
+/* Resetear márgenes y padding */
+body, h1, h2, p, button {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilo general del body */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Asegurar que ocupe toda la altura de la ventana */
+  }
+  
+  /* Estilos del contenido */
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  
+  /* Estilos de los botones */
+  button {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  button a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Estilo individual para cada botón */
+  .one {
+    background-color: #4CAF50;
+  }
+  
+  .two {
+    background-color: #008CBA;
+  }
+  
+  .three {
+    background-color: #f44336;
+  }
+  

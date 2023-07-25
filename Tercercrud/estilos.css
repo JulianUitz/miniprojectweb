@@ -1,0 +1,48 @@
+*{
+    font-family: 'Dosis', sans-serif;
+}
+main{
+    margin-bottom: 25px;
+}
+.navbar {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+  }
+
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+
+#post{
+    width: 400px;
+}
+
+#post div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+}
+.options{
+    display: flex;
+    gap: 25px;
+}
+#boton_modal{
+    width: 500px;
+    height: 50px;
+
+}
+#btn btn-primary align-items-center{
+    margin-left: 100%;
+}
+
+.container {
+    display: none;
+  }
+
+  .container.open-modal {
+    display: block;
+  }

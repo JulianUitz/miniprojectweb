@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Red social</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+      <h1>Lista de compras del Walmart</h1>
+       <div class="left">
+        <h2>Agregar Compra</h2>
+        <button id="add-task-btn"><i class="fas fa-plus"></i></button>
+        <div id="modal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <form id="form">
+                <label for="name">Articulo:</label>
+                <input type="text" id="name" required>
+                <br>
+                <label for="description">Descripción y catidad:</label>
+                <textarea id="description" cols="30" rows="10"></textarea>
+                <br>
+                <label for="date">Fecha de la compra:</label>
+                <input type="date" id="date" required>
+                <br>
+                <div id="msg"></div>
+                <button type="submit">Agregar</button>
+            </form>
+          </div>
+        </div>
+       </div> 
+       <h3>Mis Productos</h3>
+       <div class="right">
+        
+        <div id="post">
+            <!-- Aquí se agregarán los comentarios -->
+        </div>
+        <button id="clear-posts-btn">Eliminar todos los productos</button>
+       </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

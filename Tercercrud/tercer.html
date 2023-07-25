@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD DE LIBROS </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+  <main>
+    <nav class="navbar bg-body-tertiary ">
+      <div class="container-nav">
+        <a class="navbar-brand " href="#">
+          <img src="icons/book-solid.svg" alt="Bootstrap" width="30" height="24">
+            LISTA DE LIBROS POR LEER
+        </a>
+      </div>
+    </nav>
+  </main>
+
+  <div id="fondo">
+
+    <div class="d-flex align-items-center justify-content-center">
+      <div class="row justify-content-center">
+        <div class="right">
+          <button id="boton_modal" class="btn btn-primary align-items-center" style="width: 500px; height: 50px;">
+            Añadir una tarea
+          </button>
+          <hr class="mb-3">
+          <h3 class="text-center" style="margin-left: -30px;" >Lista de libros</h3>
+          <div id="post" class="mb-3">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="justify-content-end">
+    <div class="left">
+      <div class="container" id="container">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-tittle">DATOS DE MI LIBRO</h5>
+            </div>
+            <div class="modal-body align-items-center">
+              <form id="form">
+                <label for="TextArea">Nombre:</label>
+                <textarea class="form-control" id="textarea2" cols="5" rows="1"></textarea>
+                <br />
+                <label for="TextArea">Nombre del autor:</label>
+                <textarea class="form-control" id="textauthor" cols="5" rows="1"></textarea>
+                <br />
+                <label for="TextArea">Genero:</label>
+                <textarea class="form-control" id="textgender" cols="5" rows="1"></textarea>
+                <br />
+                <label for="TextArea">Descripción:</label>
+                <textarea class="form-control" id="textarea" cols="5" rows="2"></textarea>
+                <br />
+                <div id="msg"></div>
+                <div class="modal-footer">
+                  <button type="submit" class="btn btn-success mb-3">
+                    Aceptar
+                  </button>
+                  <div class="mb-3">
+                    <button id="closemodal" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Cancelar">
+                      Cancelar
+                    </button>
+                  </div>
+                </div>
+                <br />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script src="apptercerc.js"></script>
+</body>
+
+</html>
