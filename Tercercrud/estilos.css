@@ -1,9 +1,16 @@
 *{
     font-family: 'Dosis', sans-serif;
 }
+
+/* html{
+    background-image: url(img/3850c7b9a2ff7b3c97e1b993bcdd6857--fran-illustration-art.jpg);
+} */
 main{
     margin-bottom: 25px;
 }
+/* body{
+    background-color: white;
+} */
 .navbar {
     display: flex;
     justify-content: center; /* Center the content horizontally */
